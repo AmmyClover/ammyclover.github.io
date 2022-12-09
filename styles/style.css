@@ -12,16 +12,16 @@ body {
 h1 {
     margin: 0;
     padding: 20px 0;
-    color: black;
+    color: #87E2E2;
     text-shadow: 3px 3px 1px black;
     text-align: center;
   }
 
-li {
+p, li {
     font-size: 16px;
     line-height: 2;
     letter-spacing: 1px;
-    color: black;
+    color: #87E2E2;
 }
 
 img {
@@ -29,9 +29,11 @@ img {
     margin: 0 auto;
 }
 
+/*
 #p1 {
     font-size: 16px;
     line-height: 2;
     letter-spacing: 1px;
     color: black;
 }
+*/
