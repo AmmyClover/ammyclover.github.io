@@ -1,31 +1,145 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <head>
-    <meta charset="utf-8">
-    <link href="styles/style.css" rel="stylesheet" type="text/css"></link> 
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-    <title>ЭТО ХОЛОДНый Симевнс</title>
-  </head>
+    <link rel="stylesheet" href="assets/css/services/font.css">
+    <link rel="stylesheet" href="assets/css/services/normalize.css">
+    <link rel="stylesheet" href="assets/css/services/variables.css">
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/theme.css">
+    <link rel="stylesheet" href="assets/css/bar.css">
+    <link rel="stylesheet" href="assets/css/nftMovableList.css">
+    <link rel="stylesheet" href="assets/css/roadmap.css">
+    <link rel="stylesheet" href="assets/css/team.css">
 
-  <body>
-      <input type="text" id="username" placeholder="Введи вонючее имя">
-  <div id="printBlock"></div>
-    <h1>My test site, welcum</h1>
-    <img src="images/cartoon-1.png" alt="Моё тестовое изображение">
-    <h2><p>Это списки:</p></h2>
-    <ul>
-        <li>ауцфыв</li>
-        <li>ипвт</li>
-        <li>сьаоьй</li>
-      </ul>
-    <h2><p>А это сосиски:</p></h2>
-    <ol>
-        <li><a href="https://www.google.com/url?sa=i&url=https%3A%2F%2F3dlancer.net%2Fru%2Fpaidmodels%2Feda-napitki%2F3dmodel-sosiska-20954&psig=AOvVaw0rxdLC_MZw-Dh64pgYzL3z&ust=1670670059372000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCJDG9I2x7PsCFQAAAAAdAAAAABAD">сосиска1</a></li>
-        <li>сосиска2</li>
-        <li>сосиска3</li>
-    </ol>
-    <script src="scripts/main.js"></script>
-  </body>
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.png">
 
+    <title>Samoyedo</title>
+
+    <script defer src="assets/scripts/Position.js"></script>
+    <script defer src="assets/scripts/MainHandler.js"></script>
+    <script defer src="assets/scripts/BarHandler.js"></script>
+    <script defer src="assets/scripts/RoadmapHandler.js"></script>
+    <script defer src="assets/scripts/ScrollHandler.js"></script>
+    <script defer src="assets/scripts/ThemeChange.js"></script>
+</head>
+<body>
+    
+    <header id="header">
+
+        <div class="header-container">
+            <img src="assets/images/logo.png" alt="">
+
+            <div class="scroll-navigation">
+                <div class="scroll-navigation__el nv-roadmap">
+                    Roadmap
+                </div>
+                <div class="scroll-navigation__el nv-about">
+                    About
+                </div>
+                <div class="scroll-navigation__el nv-team">
+                    Team
+                </div>
+                <div class="scroll-navigation__el nv-faq">
+                    Faq
+                </div>
+            </div>
+            <div class="connect-btn">
+                Connect
+            </div>
+        </div>
+
+    </header>
+
+
+    <main id="main">
+        <div class="main-sticky">
+
+            <div id="dark-theme" class="dark-theme main-theme visible-theme wrapper">
+                <div class="s-container">
+                    <img class="s-sky" src="assets/images/main/dark/sky.png" alt="">
+                    <img class="s-middle" src="assets/images/main/dark/middle.png" alt="">
+                    <img class="s-water" src="assets/images/main/dark/water.png" alt="">
+                    <img class="s-sun" src="assets/images/main/dark/sun.png" alt="">
+                    <img class="s-mirror" src="assets/images/main/dark/mirror.png" alt="">
+                </div>
+            </div>
+
+            <div id="light-theme" class="light-theme main-theme hidden-theme">
+                <div class="s-container">
+                    <img class="s-sky" src="assets/images/main/light/sky.png" alt="">
+                    <img class="s-middle" src="assets/images/main/light/middle.png" alt="">
+                    <img class="s-water" src="assets/images/main/light/water.png" alt="">
+                    <img class="s-sun" src="assets/images/main/light/sun.png" alt="">
+                    <img class="s-mirror" src="assets/images/main/light/mirror.png" alt="">
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+
+    <div id="bar" class="bar">
+        <div class="frame">
+            <img class="background" src="assets/images/bar/background.png" alt="">
+            <img id="wolf1" class="wolf1 hide" src="assets/images/bar/1wolf.png" alt="">
+            <div id="wolf2" class="wolf2 hide">
+                <img src="assets/images/bar/2wolf.png" alt="">
+            </div>
+        </div>
+        <div class="text">
+            Samoyedo begins with a series of 2,002 digital collectibles. The collection features captivating pixel art developed to live on Aptos chain forever.
+        </div>
+    </div>
+
+    <div class="nft-movable-list">
+        <div class="quue1">
+            <img src="assets/images/nfts/139.png">
+            <img src="assets/images/nfts/327.png">
+            <img src="assets/images/nfts/344.png">
+            <img src="assets/images/nfts/429.png">
+            <img src="assets/images/nfts/59.png">
+            <img src="assets/images/nfts/829.png">
+            <img src="assets/images/nfts/894.png">
+            <img src="assets/images/nfts/dart.png">
+            <img src="assets/images/nfts/newyear.png">
+            <img src="assets/images/nfts/oleg.png">
+            <img src="assets/images/nfts/raindow.png">
+        </div>
+        <div class="quue2">
+            <img src="assets/images/nfts/139.png">
+            <img src="assets/images/nfts/327.png">
+            <img src="assets/images/nfts/344.png">
+            <img src="assets/images/nfts/429.png">
+            <img src="assets/images/nfts/59.png">
+            <img src="assets/images/nfts/829.png">
+            <img src="assets/images/nfts/894.png">
+            <img src="assets/images/nfts/dart.png">
+            <img src="assets/images/nfts/newyear.png">
+            <img src="assets/images/nfts/oleg.png">
+            <img src="assets/images/nfts/raindow.png">
+        </div>
+        
+    </div>
+
+
+    <div class="roadmap" id="roadmap">
+        <div class="roadmap-content">
+            <img src="assets/images/roadmap/roadmap.png" alt="">
+        </div>
+    </div>
+
+    <div class="team">
+        <div class="title">
+            sa·mo·ye·do | \ ˈsa-mə-ˌyedo Team
+        </div>
+
+
+    </div>
+
+</body>
 </html>

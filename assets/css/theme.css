@@ -1,0 +1,29 @@
+.main-theme {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    will-change: clip-path;
+}
+
+.visible-theme {
+    transition: clip-path ease-in-out 1s;
+    clip-path: circle(75%);
+    z-index: 2;
+}
+.hidden-theme {
+    clip-path: circle(0%);
+}
+
+
+.dark-theme {
+    background: linear-gradient(180deg, #041338 0%, #051439 28.65%, #081842 53.12%, #0C1C4B 100%);
+}
+.light-theme {
+    background: lightblue;
+}
+

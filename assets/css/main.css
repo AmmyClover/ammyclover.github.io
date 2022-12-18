@@ -1,0 +1,94 @@
+body {
+    font-family: 'VT323';
+    font-size: 32px;
+    overflow-x: hidden;
+}
+
+
+main {
+    height: 200vh;
+    width: 100%;
+    position: relative;
+    cursor: crosshair;
+}
+.main-sticky {
+    position: sticky;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+}
+
+main .wrapper {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(180deg, #020C25 0%, #111119 100%);
+}
+
+.s-container {
+    position: relative;
+
+    width: 100vw;
+    height: 100vh;
+
+    /* width: 2520px; */
+    /* height: 1440px;   */
+    max-height: 100vh;
+    overflow: hidden;
+}
+
+.s-container img {
+    position: absolute;
+    object-fit: cover;
+}
+
+.s-sky {
+    width: 100%;
+    height: 43.54%;
+    top: 0;
+    z-index: 3;
+}
+.s-middle {
+    width: 100%;
+    height: 33.75%;
+    top: 38.47%;
+}
+.s-water {
+    width: 100%;
+    height: 48.75%;
+    top: 67.1527788%;
+    z-index: 20;
+}
+.s-title {
+    top: 30.417%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.s-sun {
+    top: 46.4583333%;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 26.4583333%;
+    z-index: 4;
+}
+.s-mirror {
+    top: 66.875%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 24;
+    height: 6.0416667%;
+    transform-origin: top;
+}
+
+@media (min-width: 150vh) {
+    .s-container img {
+        object-fit: initial;
+    }
+}
+
+@media (min-height: 1440px) and (min-width: 2520px) {
+    .s-container {
+        max-width: 175vh
+    }
+}
